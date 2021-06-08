@@ -8,7 +8,7 @@
 import Foundation
 
 struct ArticleModel: Codable {
-    let articles: [NewsModel?]
+    let articles: [NewsModel]
 }
 
 
