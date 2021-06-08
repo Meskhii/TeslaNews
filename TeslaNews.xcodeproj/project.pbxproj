@@ -15,6 +15,7 @@
 		84841487266F5CC60073FE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84841485266F5CC60073FE43 /* LaunchScreen.storyboard */; };
 		84841498266F5F300073FE43 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84841497266F5F300073FE43 /* UITableViewCell+Extension.swift */; };
 		8484149B266F5F3E0073FE43 /* UITableView+Exntesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484149A266F5F3E0073FE43 /* UITableView+Exntesion.swift */; };
+		848414A1266F5FAC0073FE43 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848414A0266F5FAC0073FE43 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		84841488266F5CC60073FE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84841497266F5F300073FE43 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		8484149A266F5F3E0073FE43 /* UITableView+Exntesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Exntesion.swift"; sourceTree = "<group>"; };
+		848414A0266F5FAC0073FE43 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 		84841479266F5CC40073FE43 /* TeslaNews */ = {
 			isa = PBXGroup;
 			children = (
-				84841494266F5EDB0073FE43 /* Infrastructure */,
+				8484149E266F5F930073FE43 /* Infrastructure */,
+				84841494266F5EDB0073FE43 /* Presentation */,
 				84841493266F5ED60073FE43 /* Exensions */,
 				8484147A266F5CC40073FE43 /* AppDelegate.swift */,
 				8484147C266F5CC40073FE43 /* SceneDelegate.swift */,
@@ -89,12 +92,12 @@
 			path = Exensions;
 			sourceTree = "<group>";
 		};
-		84841494266F5EDB0073FE43 /* Infrastructure */ = {
+		84841494266F5EDB0073FE43 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				84841495266F5EE10073FE43 /* Scenes */,
 			);
-			path = Infrastructure;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		84841495266F5EE10073FE43 /* Scenes */ = {
@@ -103,6 +106,22 @@
 				8484148F266F5DE10073FE43 /* NewsScene */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8484149E266F5F930073FE43 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				8484149F266F5F980073FE43 /* NetworkManager */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		8484149F266F5F980073FE43 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				848414A0266F5FAC0073FE43 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848414A1266F5FAC0073FE43 /* NetworkManager.swift in Sources */,
 				8484147F266F5CC40073FE43 /* NewsViewController.swift in Sources */,
 				8484147B266F5CC40073FE43 /* AppDelegate.swift in Sources */,
 				8484147D266F5CC40073FE43 /* SceneDelegate.swift in Sources */,
