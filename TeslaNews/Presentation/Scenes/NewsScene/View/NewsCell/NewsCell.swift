@@ -9,6 +9,10 @@ import UIKit
 
 class NewsCell: UITableViewCell {
 
+    @IBOutlet weak var newsImageView: UIImageView!
+    @IBOutlet weak var newsTitleLabel: UILabel!
+    @IBOutlet weak var newsAuthorLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
